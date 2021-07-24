@@ -1,0 +1,321 @@
+/* Global Rules */
+:root {
+  --main--color: #cd113b;
+  --second-color: #52006a;
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: tahoma, arial;
+  background-color: #eee;
+}
+input,
+select,
+label {
+  display: block;
+}
+/* Global Rules */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+/* Start Header  */
+.header {
+  background-color: var(--main--color);
+  padding: 20px;
+  min-height: 80px;
+  max-height: 80px;
+}
+.header h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .header h1 {
+    font-size: 28px;
+  }
+}
+/* End Header */
+
+/* Start Form General */
+.form-general {
+  margin: 20px auto 0px;
+  /* margin-bottom: 0px; */
+}
+.form-general .box-inputs {
+  display: flex;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .form-general .box-inputs {
+    display: block;
+  }
+  .form-general .box-inputs .left-box {
+    margin-bottom: 20px;
+  }
+}
+.form-general .box-inputs .left-box,
+.form-general .box-inputs .right-box {
+  flex: 1;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.form-general .box-inputs .left-box label,
+.form-general .box-inputs .right-box label {
+  width: 100%;
+  margin-bottom: 10px;
+  color: #212529;
+}
+.form-general .box-inputs .left-box input,
+.form-general .box-inputs .right-box input {
+  width: 100%;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-general .box-inputs .left-box input:focus,
+.form-general .box-inputs .right-box input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(247, 27, 27, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(247, 27, 27, 0.5);
+}
+
+.form-general .box-inputs .left-box select,
+.form-general .box-inputs .right-box select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+.form-general .box-inputs .left-box select:focus,
+.form-general .box-inputs .right-box select:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(247, 27, 27, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(247, 27, 27, 0.5);
+}
+
+/* Part 01: Autre information */
+.form-general .other-info {
+  padding: 10px;
+  margin: 20px 30px 0;
+  background-color: #fff;
+}
+.form-general .other-info h2 {
+  color: #fff;
+  text-align: center;
+  background-color: var(--second-color);
+  padding: 10px;
+  font-size: 25px;
+}
+@media (max-width: 767px) {
+  .form-general .other-info h2 {
+    font-size: 22px;
+  }
+}
+.form-general .other-info .box-info-other {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 991px) {
+  .form-general .other-info .box-info-other {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .form-general .other-info .box-info-other .box-input:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.form-general .other-info .box-info-other .box-input {
+  display: flex;
+  align-items: center;
+}
+.form-general .other-info .box-info-other .box-input input,
+.form-general .other-info .box-info-other .box-input label {
+  display: inline-block;
+  font-size: 16px;
+}
+.form-general .other-info .box-info-other .box-input label {
+  margin-left: 10px;
+}
+
+/* Part 02: Equipement interieur */
+@media (min-width: 992px) {
+  .form-general .other-info .settings-box {
+    flex-wrap: wrap;
+  }
+  .form-general .other-info .box-info-other .setting-width {
+    margin-bottom: 10px;
+    width: calc(100% / 3);
+  }
+}
+
+/* Part 03: Equipement exterieur == Part 02 */
+
+/* Part 04: Equipement comfort et securite == Part 02 */
+
+/* Part 05: texte de votre annonce */
+.other-info .text-ads {
+  margin-top: 15px;
+}
+.other-info .text-ads textarea {
+  width: 100%;
+  resize: none;
+  min-height: 150px;
+  max-height: 150px;
+  font-size: 18px;
+  padding: 15px;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  font-family: tahoma, arial;
+}
+.other-info .text-ads textarea:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(247, 27, 27, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(247, 27, 27, 0.5);
+}
+@media (max-width: 767px) {
+  .other-info .text-ads textarea {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* Part 06: Prix */
+.other-info .price-box {
+  margin-top: 15px;
+}
+.other-info .price-box input[type="number"] {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+}
+.other-info .price-box input[type="number"]:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgba(247, 27, 27, 0.5);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(247, 27, 27, 0.5);
+}
+
+/* Part 07: Les photos  */
+.other-info .box-images {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.other-info .box-images .img-box {
+  width: calc(85% / 3);
+  display: flex;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .other-info .box-images {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .other-info .box-images .img-box {
+    width: 100%;
+  }
+}
+.other-info .box-images .img-box input[type="file"] {
+  display: none;
+}
+.other-info .box-images .img-box img {
+  width: 28px;
+  margin-right: 8px;
+}
+.other-info .box-images .img-box span {
+  font-weight: bold;
+  color: rgb(43, 42, 42);
+}
+
+/* Start Submit Part  */
+.final-submit {
+  margin: 20px 0px 0px 0px;
+  padding: 15px;
+  background-color: var(--main--color);
+}
+.final-submit input {
+  width: 180px;
+  margin: 0px auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 7px;
+  background-color: #fff;
+  color: var(--main--color);
+  border: 0px;
+  border-radius: 5px;
+  text-align: center;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.final-submit input:hover {
+  /* background-color: #eee; */
+  background-color: var(--second-color);
+  color: #fff;
+  border: 1px solid #fff;
+}
+/* End Form General */
